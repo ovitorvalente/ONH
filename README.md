@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚌 ONH - Ônibus na Hora
 
-## Getting Started
+**ONH** (Ônibus na Hora) é um aplicativo open source, gratuito e focado na **experiência do usuário mobile**, que permite visualizar de forma simples, acessível e em tempo real os horários e linhas de ônibus disponíveis.
 
-First, run the development server:
+> 🚧 Projeto em fase inicial. Atualmente utilizando dados mockados para desenvolvimento.
+
+<br/>
+
+## 📱 Preview
+- Em breve
+
+<br/>
+
+## 🚀 Tecnologias utilizadas
+
+- [Next.js](https://nextjs.org/) com App Router
+- [TypeScript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Prisma ORM](https://www.prisma.io/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Docker Compose](https://docs.docker.com/compose/)
+- Arquitetura: Clean Architecture + DDD moderno
+
+<br/>
+
+## 🧱 Estrutura de pastas
+
+```
+📦 src
+├── dominio/          # Entidades e contratos de domínio
+├── aplicacao/        # Casos de uso
+├── infraestrutura/   # Repositórios (Prisma, serviços, banco)
+├── interfaces/       # Páginas, rotas, componentes
+├── compartilhado/    # Utilitários, temas, validações
+└── estilos/          # Tailwind, temas globais
+````
+
+<br/>
+
+## Funcionalidades
+
+### ✅ Implementadas
+
+- [ ] Criar usuários
+- [ ] Listar todos os usuários
+- [ ] Buscar usuário por ID
+
+### 🔜 Próximas
+
+- [ ] Visualizar linhas de ônibus
+- [ ] Ver previsão em tempo real
+- [ ] Salvar rotas favoritas
+- [ ] Integração com APIs públicas de transporte
+
+<br/>
+
+## 🐳 Rodando com Docker
 
 ```bash
+docker-compose up --build
+````
+
+Acesse em `http://localhost:3000`.
+
+<br/>
+
+## 🧪 Rodando localmente (sem Docker)
+
+```bash
+# Instale as dependências
+npm install
+
+# Configure o banco
+npx prisma generate
+npx prisma migrate dev
+
+# Rode o projeto
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br/>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💻 Contribuindo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Contribuições são muito bem-vindas! Sinta-se livre para abrir issues, enviar PRs ou sugerir melhorias. Leia nosso [CONTRIBUTING.md](CONTRIBUTING.md) para começar.
 
-## Learn More
+<br/>
 
-To learn more about Next.js, take a look at the following resources:
+## 💰 Apoie este projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Se este projeto te ajuda ou te inspira, considere apoiar financeiramente:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+☕ [Apoie no Ko-fi](https://ko-fi.com/onibusnahora)
 
-## Deploy on Vercel
+<br/>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 Licença
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto está licenciado sob a **MIT License**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+<br/>
+
+## 👩‍💻 Desenvolvido por
+
+Vitor Valente([@onibusnahora](https://github.com/onibusnahora)) com ❤️ e TypeScript.
